@@ -11,7 +11,7 @@ import app.revanced.util.returnEarly
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.StringReference
 
-val spoofClientPatch = spoofClientPatch(redirectUri = "redditisfun://auth") { clientIdOption ->
+val spoofClientPatch = spoofClientPatch(redirectUri = "redreader://rr_oauth_redir") { clientIdOption ->
     compatibleWith(
         "com.andrewshu.android.reddit",
         "com.andrewshu.android.redditdonation",
