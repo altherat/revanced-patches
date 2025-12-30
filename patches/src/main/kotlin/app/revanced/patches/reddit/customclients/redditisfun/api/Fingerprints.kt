@@ -29,3 +29,30 @@ internal val getUserAgentFingerprint = fingerprint {
         Opcode.CONST,
     )
 }
+
+internal val oAuth2ActivityD0Fingerprint = fingerprint {
+    strings("redditisfun://auth")
+    custom { method, classDef ->
+        if (!classDef.endsWith("OAuth2Activity${'$'}b;")) return@custom false
+
+        method.name == "d0"
+    }
+}
+
+internal val oAuth2ActivityShouldOverrideUrlLoadingFingerprint = fingerprint {
+    strings("redditisfun://auth")
+    custom { method, classDef ->
+        if (!classDef.endsWith("OAuth2Activity${'$'}a;")) return@custom false
+
+        method.name == "shouldOverrideUrlLoading"
+    }
+}
+
+internal val cActivityJFingerprint = fingerprint {
+    strings("redditisfun://auth")
+    custom { method, classDef ->
+        if (!classDef.endsWith("c;")) return@custom false
+
+        method.name == "j"
+    }
+}

@@ -32,3 +32,40 @@ fun spoofClientPatch(
         ),
     )
 }
+
+/**
+ * Base class for patches that spoof the Reddit client.
+ *
+ * @param block The patch block. It is called with the client ID option and redirect URI option.
+ */
+fun spoofClientPatch(
+    block: BytecodePatchBuilder.(
+        clientIdOption: Option<String>,
+        redirectUriOption: Option<String>,
+    ) -> Unit,
+) = bytecodePatch(
+    name = "Spoof client",
+    description = "Restores functionality of the app by using custom client ID.",
+) {
+    block(
+        stringOption(
+            "client-id",
+            null,
+            null,
+            "OAuth client ID",
+            "The Reddit OAuth client ID. " +
+                    "You can get your client ID from https://www.reddit.com/prefs/apps. " +
+                    "The application type has to be \"Installed app\" and the redirect " +
+                    "URI has to match the value provided for the \"Redirect URI\" option.",
+            true,
+        ),
+        stringOption(
+            "redirect-uri",
+            null,
+            null,
+            "Redirect URI",
+            "The Reddit OAuth redirect URI. Should be a valid URI.",
+            true,
+        ),
+    )
+}
