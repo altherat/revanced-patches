@@ -5,7 +5,7 @@ Since you can no longer create API keys on Reddit, the latest method to get RIF 
 My goal was to create a ReVanced patch to log in to RIF because I believe doing so might prevent the 403 forbidden errors. I've never created a ReVanced patch before so I'm surprised I got something working but I have not tested it thoroughly. I had the help of looking through wchill's code for his Boost for Reddit patch (https://github.com/wchill/revanced-patches)
 
 # Steps
-1. Install [RedReader](https://github.com/QuantumBadger/RedReader/releases) from an APK or on [Google Play Store](https://play.google.com/store/apps/details?id=org.quantumbadger.redreader)
+1. Install [RedReader](https://github.com/QuantumBadger/RedReader/releases) from an APK or from the [Google Play Store](https://play.google.com/store/apps/details?id=org.quantumbadger.redreader)
 2. Open RedReader and login
 3. Wait for an email that has an "App ID" token and copy it
 4. Install [ReVanced](https://revanced.app/)
