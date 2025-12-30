@@ -5,7 +5,7 @@ Since you can no longer create API keys on Reddit, the latest method to get RIF 
 My goal was to create a ReVanced patch to log in to RIF because I believe doing so might prevent the 403 forbidden errors. I've never created a ReVanced patch before so I'm surprised I got something working but I have not tested it thoroughly. I had the help of looking through wchill's code for his Boost for Reddit patch (https://github.com/wchill/revanced-patches)
 
 # Steps
-1. Install [RedReader](https://github.com/QuantumBadger/RedReader/releases) from an APK or on the [Google Play Store](https://play.google.com/store/apps/details?id=org.quantumbadger.redreader)
+1. Install [RedReader](https://github.com/QuantumBadger/RedReader/releases) from an APK or on [Google Play Store](https://play.google.com/store/apps/details?id=org.quantumbadger.redreader)
 2. Open RedReader and login
 3. Wait for an email that has an "App ID" token and copy it
 4. Install [ReVanced](https://revanced.app/)
@@ -21,8 +21,8 @@ My goal was to create a ReVanced patch to log in to RIF because I believe doing 
 
 7. Press `OK` and restart ReVanced
 8. Open the patcher and select the RIF APK from storage
-10. Select the `Spoof client` patch and press the cog in the top-right.
-11. Paste your RedReader App ID under OAuth client ID, and put `redreader://rr_oauth_redir` for the redirect URI
+10. Select the `Spoof client` patch and press the cog in the top-right
+11. Paste your RedReader App ID under `OAuth client ID`, and put `redreader://rr_oauth_redir` for the `Redirect URI`
 12. Press `Save` and `Done` and then `Patch`
-13. Press the `Install` button (make sure you remove any RIF you have installed first)
-14. Open RIF and log in. If you get invalid username/password, you need to use a VPN (don't know why) and change to some European country. I used ProtonVPN (free) and changed servers until getting one that works.
+13. Press the `Install` button and install the patched app (make sure you remove any RIF you have installed first)
+14. Open RIF and log in (if you get invalid username/password, you need to use a VPN (don't know why) and change to some European country. I used ProtonVPN (free) and changed servers until getting one that works)
