@@ -1,3 +1,8 @@
+### This repo is not maintained
+See wchill's patches that are more up-to-date: https://github.com/wchill/patcheddit
+
+---
+
 This is a fork of https://github.com/ReVanced/revanced-patches with an attempt to fix Reddit is Fun (RIF).
 
 Since you can no longer create API keys on Reddit, the latest method to get RIF working is to install [RedReader](https://github.com/QuantumBadger/RedReader) or [Infinity+](https://github.com/Docile-Alligator/Infinity-For-Reddit) and then login to these apps to receive an email with an API key you can then use with ReVanced. This works, but I could not log into RIF and I frequently got 403 forbidden errors browsing anonymously.
@@ -11,8 +16,7 @@ My goal was to create a ReVanced patch to log in to RIF because I believe doing 
 4. Install [ReVanced](https://revanced.app/)
 
 
-5. Download an RIF APK or RIF Golden Platinum APK from some APK provider website (I've only tested with RIF Golden Platinum 5.6.22)
-
+5. Download and install the latest RIF Golden Platinum APK (5.6.22) from some APK provider website
 
 6. Go into ReVanced settings and select `Alternative sources` to point to this repository
 
